@@ -5,27 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width? initial-scale=1.0">
     <title>Интернет-магазин Rozetka</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800">
+    <link href="сss/reset.css" rel="stylesheet">
+    <link href="сss/style.css" rel="stylesheet">
+    <link href="сss/grid.css" rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <!--navigation-->
-        <!--navBar-->
-        <!--Brand-->
-        <span>Интернет-магазин Rozetka</span>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+    <header class="header bg-greenyellow">
+        <div class="container px-3">
+            <nav class="navbar px-0">
+                <!--Brand-->
+                <a class="navbar-brand float-left" href="index.html"><span class="font-weight-bold text-dark text-uppercase">Интернет-магазин Rozetka</span></a>
+                <div class="inline-block">
+                    <ul class="navbar-nav mr-auto float-left">
+                        <!--link-->
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                        <!--link-->
+                        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                        <!--link-->
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                        <!--DropdownMeny-->
+                        <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                        <div hidden>
+                            <a href="blog.html">Blog</a>
+                            <a href="about.html">About</a>
+                            <a href="services.html">Services</a>
+                            <a href="help.html">Help</a>
+                            <a href="faq.html">FAQs</a>
+                        </div>
 
-        </ul>
-        <h1>Home Page</h1>
-    </div>
-    <div>
-        <!--Header-->
-        <img src="images/product-4.jpg">
-    </div>
+                    </ul>
+                    <ul class="navbar-nav ml-auto float-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="navigation/cart.html"><i class="fas fa-dolly-flatbed text-gray"></i>Cart<small class="text-gray">(корзина пуста)</small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-heart"></i><small class="text-gray">(0)</small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-user-alt text-gray"></i>Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
 </body>
 
 </html>
