@@ -143,8 +143,16 @@ a:hover {
     background-color: #343a40 !important;
 }
 
+.bg-grey {
+    background-color: grey !important
+}
+
 .bg-greenyellow {
-    background-color: mintcream;
+    background-color: mintcream !important;
+}
+
+.bg-red {
+    background-color: red !important;
 }
 
 a.bg-dark:hover,

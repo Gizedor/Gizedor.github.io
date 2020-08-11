@@ -1,1 +1,1 @@
-#Gizedor.github.ia
+https://gizedor.github.io/

@@ -534,20 +534,18 @@
     float: none !important;
 }
 
-
-/* .cf {
+.cf {
     content: ".";
     display: block;
     clear: both;
     height: 0;
     visibility: hidden;
-} */
+}
 
-
-/* .clearfix:after {
+.clearfix:after {
     content: ".";
     visibility: hidden;
     display: block;
     height: 0;
     clear: both;
-} */
+}
