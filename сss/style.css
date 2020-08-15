@@ -6,8 +6,8 @@
 }
 
 body {
-    color: #111111;
-    background-color: whitesmoke;
+    color: yellow;
+    background-color: black;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -15,7 +15,14 @@ body {
     text-align: left;
 }
 
-h1,
+.mainHeader {
+    background-color: darkgreen;
+}
+
+h1 {
+    color: red;
+}
+
 h2,
 h3,
 h4,
@@ -29,6 +36,7 @@ h6 {
 
 img {
     display: block;
+    max-width: 33.33%;
 }
 
 .img-fluid {
@@ -37,18 +45,60 @@ img {
 }
 
 a {
-    color: #dcb14a;
+    color: greenyellow;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:hover {
-    color: #fff;
+    color: red;
     text-decoration: underline;
+}
+
+
+/*TEXT*/
+
+.text-underline {
+    text-decoration: underline;
+}
+
+
+/*RAIBOW*/
+
+.text-red {
+    color: red;
+}
+
+.text-orange {
+    color: orange;
+}
+
+.text-yellow {
+    color: yellow;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-lightBlue {
+    color: lightskyblue;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.text-purple {
+    color: purple;
 }
 
 .text-white {
     color: #fff;
+}
+
+.text-golden {
+    color: gold;
 }
 
 .text-muted {
@@ -102,7 +152,7 @@ a:hover {
 }
 
 .btn-dark {
-    color: #fff;
+    color: gold;
     background-color: #111111;
     border-color: #343a40;
 }
@@ -155,6 +205,14 @@ a:hover {
     background-color: red !important;
 }
 
+.bg-lightgreen {
+    background-color: rgb(71, 92, 71) !important;
+}
+
+.bg-lightgreen2 {
+    background-color: rgb(119, 153, 119) !important;
+}
+
 a.bg-dark:hover,
 a.bg-dark:focus,
 button.bg-dark:hover,
@@ -197,7 +255,7 @@ button.bg-dark:focus {
     min-height: 25rem;
     background-color: #ccc;
     background-image: url("../images/bg1.jpg");
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 .hero p {
@@ -215,8 +273,8 @@ button.bg-dark:focus {
     padding: 6em 0;
     background-color: #eee;
     background-image: url("../images/bg2.jpeg");
-    /* background-size: cover; */
-    /* background-attachment: fixed; */
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -239,7 +297,7 @@ button.bg-dark:focus {
 
 .navbar-brand {
     font-size: 1.25rem;
-    color: #dcb14a;
+    color: rgb(139, 139, 224);
     display: inline-block;
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
@@ -266,20 +324,20 @@ button.bg-dark:focus {
 
 .navbar-nav .nav-link {
     font-size: 0.95rem;
-    color: rgba(17, 17, 17, 0.99);
+    color: rgb(139, 139, 224);
     font-weight: 800;
     padding-right: 0;
     padding-left: 0;
 }
 
 .navbar-nav .nav-link.active {
-    color: #dcb14a;
+    color: red;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    text-decoration: none;
-    color: #dcb14a;
+    text-decoration: underline;
+    color: red;
 }
 
 .navbar-text {
