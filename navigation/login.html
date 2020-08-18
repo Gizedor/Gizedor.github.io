@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800">
+    <link href="сss/reset.css" rel="stylesheet">
+    <link href="сss/style.css" rel="stylesheet">
+    <link href="сss/grid.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!--Домой-->
+            <a href="../index.html">Home</a>
+
+            <!--<form method="GET" - тоже самое только инфа отображается в строке поисковой-->
+            <form method="POST" action="http://localhost" class="text-center border border-light p-5 m-auto">
+                <h2 class="h2 mb-4">Sign in</h2>
+
+                <!--email - поле-->
+                <input type="email" required name="email" placeholder="Enter E-mail">
+                <input type="password" required name="password" placeholder="Enter Password" class="mb-4">
+
+                <div class="d-flex justify-content-around">
+
+                    <input type="checkbox" id="rene">
+                    <label for="rene">Remember name</label>
+                    <!--
+            <label><input type="checkbox">Remember name</label>
+                -->
+                    <button type="submit" class="btn btn-dark btn-block my-4">Login</button>
+                    <a href="forgot.html">Forgot password?</a>
+                </div>
+
+
+                <a href="register.html">Sign UP</a>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

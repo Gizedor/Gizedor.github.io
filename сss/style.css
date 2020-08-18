@@ -6,8 +6,8 @@
 }
 
 body {
-    color: yellow;
-    background-color: black;
+    color: #111111;
+    background-color: #fff;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -15,14 +15,7 @@ body {
     text-align: left;
 }
 
-.mainHeader {
-    background-color: darkgreen;
-}
-
-h1 {
-    color: red;
-}
-
+h1,
 h2,
 h3,
 h4,
@@ -36,7 +29,6 @@ h6 {
 
 img {
     display: block;
-    max-width: 33.33%;
 }
 
 .img-fluid {
@@ -45,60 +37,18 @@ img {
 }
 
 a {
-    color: greenyellow;
+    color: #dcb14a;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:hover {
-    color: red;
+    color: #fff;
     text-decoration: underline;
-}
-
-
-/*TEXT*/
-
-.text-underline {
-    text-decoration: underline;
-}
-
-
-/*RAIBOW*/
-
-.text-red {
-    color: red;
-}
-
-.text-orange {
-    color: orange;
-}
-
-.text-yellow {
-    color: yellow;
-}
-
-.text-green {
-    color: green;
-}
-
-.text-lightBlue {
-    color: lightskyblue;
-}
-
-.text-blue {
-    color: blue;
-}
-
-.text-purple {
-    color: purple;
 }
 
 .text-white {
     color: #fff;
-}
-
-.text-golden {
-    color: gold;
 }
 
 .text-muted {
@@ -120,6 +70,10 @@ a:hover {
 
 .font-weight-bold {
     font-weight: 700;
+}
+
+.font-weight-normal {
+    font-weight: 400 !important;
 }
 
 .text-center {
@@ -152,7 +106,7 @@ a:hover {
 }
 
 .btn-dark {
-    color: gold;
+    color: #fff;
     background-color: #111111;
     border-color: #343a40;
 }
@@ -193,26 +147,6 @@ a:hover {
     background-color: #343a40 !important;
 }
 
-.bg-grey {
-    background-color: grey !important
-}
-
-.bg-greenyellow {
-    background-color: mintcream !important;
-}
-
-.bg-red {
-    background-color: red !important;
-}
-
-.bg-lightgreen {
-    background-color: rgb(71, 92, 71) !important;
-}
-
-.bg-lightgreen2 {
-    background-color: rgb(119, 153, 119) !important;
-}
-
 a.bg-dark:hover,
 a.bg-dark:focus,
 button.bg-dark:hover,
@@ -226,6 +160,17 @@ button.bg-dark:focus {
 
 .bg-transparent {
     background-color: transparent !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+a.bg-light:hover,
+a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+    background-color: #dae0e5 !important;
 }
 
 
@@ -275,85 +220,6 @@ button.bg-dark:focus {
     background-image: url("../images/bg2.jpeg");
     background-size: cover;
     background-attachment: fixed;
-}
-
-
-/* navbar */
-
-.nav {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-
-.navbar {
-    padding: 0.5rem 1rem;
-}
-
-.inline-block,
-.nav-item {
-    display: inline-block;
-}
-
-.navbar-brand {
-    font-size: 1.25rem;
-    color: rgb(139, 139, 224);
-    display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    line-height: inherit;
-    white-space: nowrap;
-}
-
-.navbar-brand:hover,
-.navbar-brand:focus {
-    text-decoration: none;
-}
-
-.navbar-nav {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
-}
-
-.nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
-}
-
-.navbar-nav .nav-link {
-    font-size: 0.95rem;
-    color: rgb(139, 139, 224);
-    font-weight: 800;
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.navbar-nav .nav-link.active {
-    color: red;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    text-decoration: underline;
-    color: red;
-}
-
-.navbar-text {
-    display: inline-block;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.navbar>.container {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.navbar .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
 }
 
 
