@@ -828,7 +828,7 @@
     color: #dcb14a;
 }
 
-.navbar>.container {
+.navbar .container {
     padding-right: 0;
     padding-left: 0;
 }
@@ -842,7 +842,7 @@
     padding-left: 0.5rem;
 }
 
-.navbar>.container {
+.navbar .container {
     flex-wrap: nowrap;
 }
 

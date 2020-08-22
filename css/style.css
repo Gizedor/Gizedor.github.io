@@ -7,7 +7,7 @@
 
 body {
     color: #111111;
-    background-color: #fff;
+    background-color: rgb(204, 206, 184);
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -45,6 +45,17 @@ a {
 a:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+.mainHeader {
+    background-color: green;
+}
+
+
+/*text-color*/
+
+.text-brown {
+    color: brown;
 }
 
 .text-white {
@@ -166,6 +177,10 @@ button.bg-dark:focus {
     background-color: #f8f9fa !important;
 }
 
+.bg-brown {
+    background-color: rgb(224, 154, 154);
+}
+
 a.bg-light:hover,
 a.bg-light:focus,
 button.bg-light:hover,
@@ -224,17 +239,6 @@ button.bg-light:focus {
 
 
 /* footer */
-
-.footer-link {
-    font-size: 0.85rem;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-    padding-left: 0.6rem;
-    color: #fff;
-    text-decoration: none;
-}
 
 .reset-anchor {
     color: inherit;

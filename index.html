@@ -7,9 +7,11 @@
     <title>Git.hub Trade</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800">
-    <link href="сss/reset.css" rel="stylesheet">
-    <link href="сss/style.css" rel="stylesheet">
-    <link href="сss/grid.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,12 +23,13 @@
                 <!--Brand-->
                 <a class="navbar-brand" href="index.html"><span class="font-weight-bold text-golden text-uppercase">Git.hub Trade</span></a>
                 <div class="container">
+                    <!--1вый блок-->
                     <ul class="navbar-nav mr-auto">
-                        <!--link-->
+                        <!--home-->
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <!--link-->
+                        <!--shop-->
                         <li class="nav-item"><a class="nav-link" href="navigation/shop.html">Shop</a></li>
-                        <!--link-->
+                        <!--Contacts-->
                         <li class="nav-item"><a class="nav-link" href="navigation/contact.html">Contact</a></li>
                         <!--DropdownMeny-->
                         <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
@@ -39,13 +42,17 @@
                         </div>
 
                     </ul>
+                    <!--2рой блок-->
                     <ul class="navbar-nav ml-auto">
+                        <!--Корзина-->
                         <li class="nav-item">
                             <a class="nav-link" href="navigation/cart.html"><i class="fas fa-dolly-flatbed text-gray"></i>Cart<small class="text-white">(корзина пуста)</small></a>
                         </li>
+                        <!--Лайк-->
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-heart"></i><small class="text-gray">(0)</small></a>
+                            <a class="nav-link" href="#"><i class="far fa-heart"></i><small class="text-gray"> (0)</small></a>
                         </li>
+                        <!--Логин-->
                         <li class="nav-item">
                             <a class="nav-link" href="navigation/login.html"><i class="fas fa-user-alt text-gray"></i>Login</a>
                         </li>
@@ -67,7 +74,8 @@
                     <div class="col">
                         <p class="text-dark small text-uppercase">Супер Скидки 2020</p>
                         <h1>Скидки до 20% на товары нового сезона</h1>
-                        <a class="btn btn-dark" href="navigation/shop.html">Обзор коллекции</a>
+                        <a class="btn btn-dark" href="navigation/shop.html">
+                            <span>Обзор коллекции</span></a>
                     </div>
 
                 </div>
@@ -100,7 +108,7 @@
     </div>
 
     <!--ClearFix-->
-    <div class="cf"></div>
+
 
     <!--OverLay-->
     <div class="overlay-trend">
@@ -123,7 +131,7 @@
     <section class="py-5">
         <header>
             <p class="small text-muted small text-uppercase">Made the hard way</p>
-            <h2 class="text-uppercase mb-4"></h2>
+            <h2 class="text-uppercase mb-4">Top Trending Products</h2>
         </header>
         <!--row-->
         <div class="row">
@@ -271,7 +279,91 @@
             </div>
         </div>
     </section>
+    <!--OverLay 2-->
+    <div class="overlay-trend">
+        <div class="text-brown font-weight-bold">
+            <h3 class="text-dark"> Заголовок 2-рого оверлея</h3>
+            <p>Текст во 2-ром оверлее,Текст во 2-ром оверлее,Текст во 2-ром оверлее.</p>
+            <p class="text-white">...</p>
+        </div>
+        <ul class="list-unstyled text-brown font-weight-bold">
+            <li class="list-inline-item">
+                <blockquote>HTML-элемент blockquote (от англ. Block Quotation) указывает на то, что заключенный в нем текст является развернутой цитатой. Обычно он (текст) визуально выделяется наклонным (смотри Примечание, где говорится о том, как это изменить).
+                    URI на источник цитаты можно указать в атрибуте cite, тогда как текстовое представление источника может быть задано элементом <cite>.</blockquote>
+           <p>MDN Web Docs / Web</p>
+           <p class="text-white">...</p>
+                    </li>
+            <li>
+                <blockquote cite="http://developer.mozilla.org">
+                    <p>This is a quotation taken from the Mozilla Developer Center.</p>
+                  </blockquote>
+            </li>
+        </ul>
+    </div>
+   <!-- SERVICES-->
+   <section class="py-5 bg-brown">
+    <!-- container -->
+    <div class="container">
 
+        <!-- container -->
+        <!-- row -->
+        <div class="row text-center">
+            <!-- 3 columns -->
+            <div class="col-4 mb-3">
+                <div class="d-inline-block">
+                    <div class="media align-items-end">
+                        <div class="d-inline-block">
+                            <h6 class="text-uppercase">Free shipping</h6>
+                            <p class="text-small text-muted">Free shipping worlwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-3">
+                <div class="d-inline-block">
+                    <div class="media align-items-end">
+                        <div class="d-inline-block">
+                            <h6 class="text-uppercase">24 x 7 service</h6>
+                            <p class="text-small text-muted">Free shipping worlwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-inline-block">
+                    <div class="media align-items-end">
+                        <div class="d-inline-block">
+                            <h6 class="text-uppercase">Festival offer</h6>
+                            <p class="text-small text-muted">Free shipping worlwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!--newsLetter-->
+    <section class="py-5">
+        <div class="container p-0">
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <h5>Подписка на новостую ленту</h5>
+                    <p class="text-small text-muted">Ежемесячная подписка на новостную ленту.</p>
+                </div>
+                <div class="col-6">
+                    <form action="#">
+                    <div>
+                        <input type="email" class="mb-4 form-control" placeholder="Enter your email address">
+                        <div>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <!--Футер-->
     <footer class="bg-dark text-white">
         <div class="container py-4">
@@ -299,15 +391,26 @@
                     </ul>
 
                 </div>
-                <div class="col-4 mb-3 float-right">
+                <div class="col-4 mb-4">
                     <h6 class="text-uppercase">Social media</h6>
                     <ul class="list-unstyled">
-                        <li><a class="footer-link" href="#"> Twitter</a></li>
-                        <li><a class="footer-link" href="#"> Facebook</a></li>
-                        <li><a class="footer-link" href="#"> Instagram</a></li>
-                        <li><a class="footer-link" href="#"> Goodle</a></li>
+                        <li><a class="footer-link twitter" href="#"> Twitter</a></li>
+                        <li><a class="footer-link facebook" href="#"> Facebook</a></li>
+                        <li><a class="footer-link instagram" href="#"> Instagram</a></li>
+                        <li><a class="footer-link google" href="#"> Google</a></li>
 
                     </ul>
+                </div>
+            </div>
+            <div class="border-top pt-4" style="border-color: #1d1d1d !important;">
+                <!--2 colums-->
+                <div class="row">
+                    <div class="col-6">
+                        <p class="small text-muted mb-0">&copy; 2020 All right reserved.</p>
+                    </div>
+                    <div class="col-6 text-right">
+                        <p class="text-white reset-anchor">Template desined by <a href="#">Alexander</a></p>
+                    </div>
                 </div>
             </div>
         </div>
