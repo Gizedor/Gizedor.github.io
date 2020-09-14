@@ -5,10 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/form.css" rel="stylesheet">
+    <link href="../css/forms.css" rel="stylesheet">
+    <link href="../css/grid.css" rel="stylesheet">
+    <link href="../css/nav.css" rel="stylesheet">
+    <link href="../css/sffects.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <!--Dinamick Hamburber Header-->
+    <header class="header">
+        <div class="container px-3">
+            <nav class="navbar px-0">
+                <input class="trigger" type="checkbox" id="hamburgerButton">
+                <label for="hamburgerButton"><a class="navbar-brand" href="index.html"><span class="font-weight-bold text-golden text-uppercase">Git.hub Trade</span></a></label>
 
+                <div class="collapse">
+                    <a class="navbar-brand" href="index.html"><span class="font-weight-bold text-golden text-uppercase">Git.hub Trade</span></a>
+                    <!--1вый блок-->
+                    <ul class="navbar-nav mr-auto">
+                        <!--home-->
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <!--shop-->
+                        <li class="nav-item"><a class="nav-link" href="navigation/shop.html">Shop</a></li>
+                        <!--Contacts-->
+                        <li class="nav-item"><a class="nav-link" href="navigation/contact.html">Contact</a></li>
+                        <!--DropdownMeny-->
+                        <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                        <div hidden>
+                            <a href="navigation/blog.html">Blog</a>
+                            <a href="navigation/about.html">About</a>
+                            <a href="navigation/Servises.html">Services</a>
+                            <a href="navigation/Help.html">Help</a>
+                            <a href="navigation/FAQ.html">FAQs</a>
+                        </div>
+
+                    </ul>
+                    <!--2рой блок-->
+                    <ul class="navbar-nav ml-auto">
+                        <!--Корзина-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="navigation/cart.html"><i class="fas fa-dolly-flatbed text-gray"></i>Cart<small class="text-white">(корзина пуста)</small></a>
+                        </li>
+                        <!--Лайк-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-heart"></i><small class="text-gray"> (0)</small></a>
+                        </li>
+                        <!--Логин-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="navigation/login.html"><i class="fas fa-user-alt text-gray"></i>Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 </body>
 
 </html>

@@ -7,29 +7,36 @@
     <title>Git.hub Trade Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800">
-    <link href="../css/reset.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/grid.css" rel="stylesheet">
-    <link href="../css/forms.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/sffects.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/product.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <!--Хедер-->
-    <header class="mainHeader">
+    <!--Dinamick Hamburber Header-->
+    <header class="header container">
         <div class="container px-3">
             <nav class="navbar px-0">
-                <!--Brand-->
-                <a class="navbar-brand" href="../index.html"><span class="font-weight-bold text-golden text-uppercase">Git.hub Trade</span></a>
-                <div class="container">
+                <input class="trigger" type="checkbox" id="hamburgerButton">
+                <label for="hamburgerButton"><a class="navbar-brand" href="index.html"><span class="font-weight-bold text-golden text-uppercase">Git.hub Trade</span></a></label>
+
+                <div class="collapse">
+                    <a class="navbar-brand" href="index.html"><span class="font-weight-bold text-golden text-uppercase">Git.hub Trade</span></a>
                     <!--1вый блок-->
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto effect-brackets">
                         <!--home-->
-                        <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <!--shop-->
-                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
                         <!--Contacts-->
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="navigation/contact.html">Contact</a></li>
                         <!--DropdownMeny-->
                         <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
                         <div hidden>
@@ -42,10 +49,10 @@
 
                     </ul>
                     <!--2рой блок-->
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto effect-brackets">
                         <!--Корзина-->
                         <li class="nav-item">
-                            <a class="nav-link" href="cart.html"><i class="fas fa-dolly-flatbed text-gray"></i>Cart<small class="text-white">(корзина пуста)</small></a>
+                            <a class="nav-link" href="navigation/cart.html"><i class="fas fa-dolly-flatbed text-gray"></i>Cart<small class="text-gray">(0)</small></a>
                         </li>
                         <!--Лайк-->
                         <li class="nav-item">
@@ -63,17 +70,76 @@
     </header>
 
     <div class="container">
-        <!--shop banner section-->
-        <section class="py-5 bg-light">
-            <div class="row px-4 align-items-center">
-                <div class="col-6">
-                    <h1 class="h2 text-uppercase mb-0">Shop</h1>
-                </div>
-                <div class="col-6 text-right">
+        <!-- HERO SECTION-->
+        <article class="container carousel">
 
+            <input class="activator" type="radio" name="carousel" id="A" checked="checked" />
+            <input class="activator" type="radio" name="carousel" id="B" />
+            <input class="activator" type="radio" name="carousel" id="C" />
+            <input class="activator" type="radio" name="carousel" id="D" />
+            <input class="activator" type="radio" name="carousel" id="E" />
+
+            <div class="controls">
+                <label class="control control-backward" for="E"></label>
+                <label class="control control-forward" for="B"></label>
+            </div>
+            <div class="controls">
+                <label class="control control-backward" for="A"></label>
+                <label class="control control-forward" for="C"></label>
+            </div>
+            <div class="controls">
+                <label class="control control-backward" for="B"></label>
+                <label class="control control-forward" for="D"></label>
+            </div>
+            <div class="controls">
+                <label class="control control-backward" for="C"></label>
+                <label class="control control-forward" for="E"></label>
+            </div>
+            <div class="controls">
+                <label class="control control-backward" for="D"></label>
+                <label class="control control-forward" for="A"></label>
+            </div>
+
+            <div class="slides">
+                <div class="overflow">
+                    <div class="items">
+                        <article class="slide"><img src="images/slider/1.jpg"></article>
+                        <article class="slide"><img src="images/slider/2.jpg">
+                            <div class="row px-4 px-lg-5">
+                                <div class="shop-slide col-lg-6">
+                                    <p class="text-muted small text-uppercase mb-2">New Inspiration 2020</p>
+                                    <h1 class="h2 text-uppercase mb-3">20% off on new season</h1>
+                                    <a class="btn btn-browse" href="shop.html">
+                                        <span>Browse collections</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="slide"><img src="images/slider/3.jpg"></article>
+                        <article class="slide"><img src="images/slider/4.jpg">
+                            <div class="row px-4 px-lg-5">
+                                <div class="shop-slide col-lg-6">
+                                    <p class="text-muted small text-uppercase mb-2">New Inspiration 2020</p>
+                                    <h1 class="h2 text-uppercase mb-3">20% off on new season</h1>
+                                    <a class="btn btn-browse" href="shop.html">
+                                        <span>Browse collections</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="slide"><img src="images/slider/5.jpg"></article>
+
+                    </div>
+                    <div class="indicators">
+                        <label class="indicator" for="A"></label>
+                        <label class="indicator" for="B"></label>
+                        <label class="indicator" for="C"></label>
+                        <label class="indicator" for="D"></label>
+                        <label class="indicator" for="E"></label>
+                    </div>
                 </div>
             </div>
-        </section>
+        </article>
         <!--SHOP side bar section-->
         <section class="py-5 ">
             <div class="container p-0">
@@ -116,7 +182,7 @@
                                 <p class="text-small text-muted mb-0">Отображается 1-12 из 53 товаров</p>
                             </div>
                             <div class="col-6">
-                                <ul class="list-inline d-flex align-items-center justify-content-end mb-0">
+                                <ul class="list-inline d-flex justify-content-end mb-0">
                                     <li class="list-inline-item text-muted mr-3"><a class="reset-anchor p-0" href="#"><i class="fas fa-th-large"></i></a></li>
                                     <li class="list-inline-item text-muted mr-3"><a class="reset-anchor p-0" href="#"><i class="fas fa-th"></i></a></li>
                                 </ul>
@@ -129,7 +195,7 @@
                                 <div class="product text-center">
                                     <div class="mb-3 position-relative">
                                         <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="../images/product-1.jpg" alt="...">
+                                            <img class="img-fluid w-100" src="images/product-1.jpg" alt="...">
                                         </a>
                                         <div class="product-overlay">
                                             <ul class="mb-0 list-inline">
@@ -149,7 +215,7 @@
                                 <div class="product text-center">
                                     <div class="mb-3 position-relative">
                                         <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="../images/product-2.jpg" alt="...">
+                                            <img class="img-fluid w-100" src="images/product-2.jpg" alt="...">
                                         </a>
                                         <div class="product-overlay">
                                             <ul class="mb-0 list-inline">
@@ -169,7 +235,7 @@
                                 <div class="product text-center">
                                     <div class="mb-3 position-relative">
                                         <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="../images/product-3.jpg" alt="...">
+                                            <img class="img-fluid w-100" src="images/product-3.jpg" alt="...">
                                         </a>
                                         <div class="product-overlay">
                                             <ul class="mb-0 list-inline">
@@ -189,7 +255,7 @@
                                 <div class="product text-center">
                                     <div class="mb-3 position-relative">
                                         <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="../images/product-4.jpg" alt="...">
+                                            <img class="img-fluid w-100" src="images/product-4.jpg" alt="...">
                                         </a>
                                         <div class="product-overlay">
                                             <ul class="mb-0 list-inline">
@@ -209,7 +275,7 @@
                                 <div class="product text-center">
                                     <div class="mb-3 position-relative">
                                         <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="../images/product-5.jpg" alt="...">
+                                            <img class="img-fluid w-100" src="images/product-5.jpg" alt="...">
                                         </a>
                                         <div class="product-overlay">
                                             <ul class="mb-0 list-inline">
@@ -229,7 +295,7 @@
                                 <div class="product text-center">
                                     <div class="mb-3 position-relative">
                                         <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="../images/product-6.jpg" alt="...">
+                                            <img class="img-fluid w-100" src="images/product-6.jpg" alt="...">
                                         </a>
                                         <div class="product-overlay">
                                             <ul class="mb-0 list-inline">
@@ -249,7 +315,7 @@
                                 <div class="product text-center">
                                     <div class="mb-3 position-relative">
                                         <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="../images/product-7.jpg" alt="...">
+                                            <img class="img-fluid w-100" src="images/product-7.jpg" alt="...">
                                         </a>
                                         <div class="product-overlay">
                                             <ul class="mb-0 list-inline">
@@ -269,7 +335,7 @@
                                 <div class="product text-center">
                                     <div class="mb-3 position-relative">
                                         <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="../images/product-8.jpg" alt="...">
+                                            <img class="img-fluid w-100" src="images/product-8.jpg" alt="...">
                                         </a>
                                         <div class="product-overlay">
                                             <ul class="mb-0 list-inline">
@@ -289,7 +355,7 @@
                                 <div class="product text-center">
                                     <div class="mb-3 position-relative">
                                         <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="../images/product-9.jpg" alt="...">
+                                            <img class="img-fluid w-100" src="images/product-9.jpg" alt="...">
                                         </a>
                                         <div class="product-overlay">
                                             <ul class="mb-0 list-inline">
@@ -309,7 +375,7 @@
                                 <div class="product text-center">
                                     <div class="mb-3 position-relative">
                                         <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="../images/product-10.jpg" alt="...">
+                                            <img class="img-fluid w-100" src="images/product-10.jpg" alt="...">
                                         </a>
                                         <div class="product-overlay">
                                             <ul class="mb-0 list-inline">
@@ -329,7 +395,7 @@
                                 <div class="product text-center">
                                     <div class="mb-3 position-relative">
                                         <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="../images/product-11.jpg" alt="...">
+                                            <img class="img-fluid w-100" src="images/product-11.jpg" alt="...">
                                         </a>
                                         <div class="product-overlay">
                                             <ul class="mb-0 list-inline">
@@ -349,7 +415,7 @@
                                 <div class="product text-center">
                                     <div class="mb-3 position-relative">
                                         <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="../images/product-12.jpg" alt="...">
+                                            <img class="img-fluid w-100" src="images/product-12.jpg" alt="...">
                                         </a>
                                         <div class="product-overlay">
                                             <ul class="mb-0 list-inline">

@@ -8,53 +8,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800">
     <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
     <link href="css/forms.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/sffects.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/product.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <!--Навигационная Панель-->
+    <!--Dinamick Hamburber Header-->
+    <header class="container header ">
+        <div class="container px-3 ">
+            <nav class="navbar px-0 ">
+                <input class="trigger " type="checkbox " id="hamburgerButton ">
+                <label for="hamburgerButton "><a class="navbar-brand " href="index.html "><span class="font-weight-bold text-uppercase ">Git.hub Trade</span></a></label>
 
-    <header class="mainHeader">
-        <div class="container px-3">
-            <nav class="navbar px-0">
-                <!--Brand-->
-                <a class="navbar-brand" href="index.html"><span class="font-weight-bold text-golden text-uppercase">Git.hub Trade</span></a>
-                <div class="container">
+                <div class="collapse ">
+                    <a class="navbar-brand " href="index.html "><span class="font-weight-bold text-golden text-uppercase ">Git.hub Trade</span></a>
                     <!--1вый блок-->
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto effect-brackets ">
                         <!--home-->
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item font-weight-bold "><a class="nav-link active " href="index.html ">Home</a></li>
                         <!--shop-->
-                        <li class="nav-item"><a class="nav-link" href="navigation/shop.html">Shop</a></li>
+                        <li class="nav-item font-weight-bold "><a class="nav-link " href="shop.html ">Shop</a></li>
                         <!--Contacts-->
-                        <li class="nav-item"><a class="nav-link" href="navigation/contact.html">Contact</a></li>
+                        <li class="nav-item font-weight-bold "><a class="nav-link " href="navigation/contact.html ">Contact</a></li>
                         <!--DropdownMeny-->
-                        <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                        <li class="nav-item font-weight-bold "><a class="nav-link " href="#">Pages</a></li>
                         <div hidden>
-                            <a href="navigation/blog.html">Blog</a>
-                            <a href="navigation/about.html">About</a>
-                            <a href="navigation/Servises.html">Services</a>
-                            <a href="navigation/Help.html">Help</a>
-                            <a href="navigation/FAQ.html">FAQs</a>
+                            <a href="navigation/blog.html ">Blog</a>
+                            <a href="navigation/about.html ">About</a>
+                            <a href="navigation/Servises.html ">Services</a>
+                            <a href="navigation/Help.html ">Help</a>
+                            <a href="navigation/FAQ.html ">FAQs</a>
                         </div>
 
                     </ul>
                     <!--2рой блок-->
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto effect-brackets ">
                         <!--Корзина-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="navigation/cart.html"><i class="fas fa-dolly-flatbed text-gray"></i>Cart<small class="text-white">(корзина пуста)</small></a>
+                        <li class="nav-item ">
+                            <a class="nav-link font-weight-bold cart-toggle " href="# "><i class="fas fa-dolly-flatbed text-briez "></i>Cart<small class="text-white ">(0)</small></a>
                         </li>
                         <!--Лайк-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-heart"></i><small class="text-gray"> (0)</small></a>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="# "><i class="far fa-heart "></i><small class="text-gray "> (0)</small></a>
                         </li>
                         <!--Логин-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="navigation/login.html"><i class="fas fa-user-alt text-gray"></i>Login</a>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="navigation/login.html "><i class="fas fa-user-alt text-briez "></i>Login</a>
                         </li>
 
                     </ul>
@@ -62,359 +69,447 @@
             </nav>
         </div>
     </header>
+    <!--aside-->
+    <!-- aside -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            <h5 class="logo">Shopping Cart</h5>
+        </div>
 
-    <!--hero section-->
-    <div class="container">
-        <section class="hero pb-3 text-center">
-            <!--container-->
-            <div class="container">
-                <!--row-->
-                <div class="row">
-                    <!--column-->
-                    <div class="col">
-                        <p class="text-dark small text-uppercase">Супер Скидки 2020</p>
-                        <h1>Скидки до 20% на товары нового сезона</h1>
-                        <a class="btn btn-dark" href="navigation/shop.html">
-                            <span>Обзор коллекции</span></a>
+        <!-- cart items - тестовый товар
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="picture">
+                    <img src="images/product-3.jpg" alt="..." class="img-fluid w-100">
+                </div>
+                <div class="product-name p-auto">
+                    Red digital smartwatch
+                </div>
+                <div class="remove-btn text-right">
+                    <a class="reset-anchor m-auto" href="#">
+                        <i class="fas fa-trash-alt"></i>
+                    </a>
+                </div>
+                <div class="quantity">
+                    <div class="border d-flex justify-content-around mx-auto">
+                        <button class="dec-btn p-0"><i class="fas fa-caret-left"></i></button>
+                        <input class="form-control form-control-sm border-0 p-0" name="quantity" type="text" value="1">
+                        <button class="inc-btn p-0"><i class="fas fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="price">
+                    $250
+                </div>
+            </div> -->
+        </div>
+
+        <!-- buttons -->
+
+    </aside>
+    <!--Центр-->
+    <div class="container ">
+        <!--Слайдер-->
+        <article class="container carousel ">
+            <div class="slides ">
+                <div class="overflow ">
+                    <div class="items ">
+                        <article class="slide "><img src="images/slider/1.jpg "></article>
+                        <article class="slide "><img src="images/slider/2.jpg ">
+                            <div class="row px-4 px-lg-5 ">
+                                <!--column-->
+                                <div class="col-lg-6 slide2 ">
+                                    <p class="text-dark small text-uppercase mb-2 ">Супер Скидки 2020</p>
+                                    <h1 class="h2 text-uppercase mb-3 ">Скидки до 20% на товары нового сезона</h1>
+                                    <a class="btn btn-browse " href="navigation/shop.html ">
+                                        <span>Обзор коллекции</span></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="slide "><img src="images/slider/3.jpg "></article>
+                        <article class="slide "><img src="images/slider/4.jpg ">
+                            <div class="row px-4 px-lg-5 ">
+                                <!--column-->
+                                <div class="col-lg-6 slide4 ">
+                                    <p class="text-dark small text-uppercase mb-2 ">Супер Скидки 2020</p>
+                                    <h1 class="h2 text-uppercase mb-3 ">Скидки до 20% на товары нового сезона</h1>
+                                    <a class="btn btn-browse " href="navigation/shop.html ">
+                                        <span>Обзор коллекции</span></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="slide "><img src="images/slider/5.jpg "></article>
                     </div>
 
                 </div>
             </div>
-        </section>
+        </article>
 
-    </div>
-
-    <!--Секция 1-->
-    <div class="container px-3 clearfix">
-        <section class="pt-5">
-            <header class="text-center">
-                <p class="text-purple"><strong>Хит Сезона!</strong></p>
-                <h2 class="mb-4 text-uppercase">Только на Git.hub Trade</h2>
+        <!--Секция 1-->
+        <section class="pt-5 ">
+            <header class="text-center ">
+                <p class="text-olive "><strong>Хит Сезона!</strong></p>
+                <h2 class="mb-4 text-uppercase text-olive ">Только на Git.hub Trade</h2>
             </header>
-            <div class="row">
+            <div class="row ">
                 <!--3 columns -->
-                <div class="col-4 mb-4 float-left">
-                    <a href="navigation/shop.html"><img src="images/cat-img-1.jpg" alt="" class="img-fluid"><strong>Одежда</strong></a>
+                <div class="col-md-4 mb-4 mb-md-0 ">
+                    <a class="category-item " href="navigation/shop.html "><img src="images/cat-img-1.jpg " alt=" " class="img-fluid ">
+                        <strong class="category-item-title ">Одежда</strong></a>
                 </div>
-                <div class="col-4 mb-4 float-left">
-                    <a href="navigation/shop.html"><img src="images/cat-img-2.jpg" alt="" class="img-fluid"><strong>Обувь</strong></a>
-                    <a href="navigation/shop.html"><img src="images/cat-img-3.jpg" alt="" class="img-fluid"><strong>Часы</strong></a>
+                <div class="col-md-4 mb-4 mb-md-0 ">
+                    <a class="category-item mb-4 " href="navigation/shop.html "><img src="images/cat-img-2.jpg " alt=" " class="img-fluid ">
+                        <strong class="category-item-title ">Обувь</strong></a>
+                    <a class="category-item " href="navigation/shop.html "><img src="images/cat-img-3.jpg " alt=" " class="img-fluid ">
+                        <strong class="category-item-title ">Часы</strong></a>
                 </div>
-                <div class="col-4 mb-4 float-right">
-                    <a href="navigation/shop.html"><img src="images/cat-img-4.jpg" alt="" class="img-fluid"><strong>Електроника</strong></a>
+                <div class="col-md-4 ">
+                    <a class="category-item " href="navigation/shop.html "><img src="images/cat-img-4.jpg " alt=" " class="img-fluid ">
+                        <strong class="category-item-title ">Электроника</strong></a>
                 </div>
             </div>
         </section>
-    </div>
 
-    <!--ClearFix-->
+        <!--OverLay-->
+        <section class="overlay-trend ">
+            <h3 class="text-uppercase text-muted ">Хочешь посмотреть на котиков?</h3>
+            <p class="text-red "><strong>В этот раз посмотри на карусельку!</strong></p>
+            <div class="font-weight-bold ">
+                <i class="text-red ">Карусели,</i>
+                <i class="text-orange "> карусели,</i>
+                <i class="text-yellow "> Сели, сели,</i>
+                <i class="text-green "> полетели,</i>
+                <i class="text-lightBlue "> Завертелись, закрутились,</i>
+                <i class="text-blue "> Зажужжали,</i>
+                <i class="text-purple "> покатились!</i>
+            </div>
+            <a href="navigation/cats.html " class="font-weight-bold ">Ссылка на котиков &raquo;</a>
 
+        </section>
 
-    <!--OverLay-->
-    <div class="overlay-trend">
-        <h3 class="text-uppercase text-muted">Хочешь посмотреть на котиков?</h3>
-        <p class="text-red"><strong>В этот раз посмотри на карусельку!</strong></p>
-        <div class="font-weight-bold">
-            <i class="text-red">Карусели,</i>
-            <i class="text-orange"> карусели,</i>
-            <i class="text-yellow"> Сели, сели,</i>
-            <i class="text-green"> полетели,</i>
-            <i class="text-lightBlue"> Завертелись, закрутились,</i>
-            <i class="text-blue"> Зажужжали,</i>
-            <i class="text-purple"> покатились!</i>
-        </div>
-        <a href="navigation/cats.html" class="font-weight-bold">Ссылка на котиков &raquo;</a>
-
-    </div>
-
-    <!--3-х колоночная секция-->
-    <section class="py-5">
-        <header>
-            <p class="small text-muted small text-uppercase">Made the hard way</p>
-            <h2 class="text-uppercase mb-4">Top Trending Products</h2>
-        </header>
-        <!--row-->
-        <div class="row">
-            <!--3 col-->
-            <!--product 1-->
-            <div class="col-3">
-                <div class="product text-center">
-                    <div class="position-relative mb-3">
-                        <a class="d-block" href="details.html"><img class="img-fluid w-100" src="images/product-1.jpg" alt="..."></a>
-                        <div class="product-overlay">
-                            <ul class="mb-0 list-inline">
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</i></a></li>
-                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-expand"></i></a></li>
-                            </ul>
+        <!--4-х колоночная секция-->
+        <section class="py-5 ">
+            <header>
+                <p class="small text-muted small text-uppercase ">Made the hard way</p>
+                <h2 class="text-uppercase mb-4 ">Top Trending Products</h2>
+            </header>
+            <!--row-->
+            <div class="row ">
+                <!--3 col-->
+                <!--product 1-->
+                <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                    <div class="product text-center ">
+                        <div class="position-relative mb-3 ">
+                            <a class="d-block " href="details.html "><img class="img-fluid w-100 " src="images/product-1.jpg " alt="... "></a>
+                            <div class="product-overlay ">
+                                <ul class="mb-0 list-inline ">
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-outline-dark " href="# "><i class="far fa-heart "></i></a></li>
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-dark add-to-cart " href="# ">Add to cart</i></a></li>
+                                    <li class="list-inline-item mr-0 "><a class="btn btn-outline-dark " href="# "><i class="far fa-expand "></i></a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <h6><a class="reset-anchor" href="details.html">Китайские наушники</a></h6>
-                    <p class="small text-muted">$250</p>
-                </div>
-            </div>
-            <!--product 2-->
-            <div class="col-3">
-                <div class="product text-center">
-                    <a class="d-block" href="details.html"><img class="img-fluid w-100" src="images/product-2.jpg" alt="..."></a>
-                    <div class="product-overlay">
-                        <ul class="mb-0 list-inline">
-                            <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                            <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</i></a></li>
-                            <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-expand"></i></a></li>
-
-                        </ul>
+                        <h6><a class="reset-anchor " href="details.html ">Китайские наушники</a></h6>
+                        <p class="small text-muted ">$250</p>
                     </div>
                 </div>
-                <h6><a class="reset-anchor" href="details.html">Боксерские перчатки</a></h6>
-                <p class="small text-muted">$300</p>
-            </div>
-            <!-- PRODUCT-->
-            <div class="col-3">
-                <div class="product text-center">
-                    <div class="position-relative mb-3">
+                <!--product 2-->
+                <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                    <div class="product text-center ">
+                        <div class="position-relative mb-3 ">
+                            <a class="d-block " href="details.html "><img class="img-fluid w-100 " src="images/product-2.jpg " alt="... "></a>
+                            <div class="product-overlay ">
+                                <ul class="mb-0 list-inline ">
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-outline-dark " href="# "><i class="far fa-heart "></i></a></li>
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-dark add-to-cart " href="# ">Add to cart</i></a></li>
+                                    <li class="list-inline-item mr-0 "><a class="btn btn-outline-dark " href="# "><i class="far fa-expand "></i></a></li>
 
-                        <a class="d-block" href="details.html"><img class="img-fluid w-100" src="images/product-3.jpg" alt="..."></a>
-                        <div class="product-overlay">
-                            <ul class="mb-0 list-inline">
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
+                        <h6><a class="reset-anchor " href="details.html ">Кроссовки Jordan</a></h6>
+                        <p class="small text-muted ">$300</p>
                     </div>
-                    <h6> <a class="reset-anchor" href="details.html">Футболка</a></h6>
-                    <p class="small text-muted">$25</p>
                 </div>
-            </div>
-            <!-- PRODUCT-->
-            <div class="col-3">
-                <div class="product text-center">
-                    <div class="position-relative mb-3">
+                <!-- PRODUCT-3-->
+                <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                    <div class="product text-center ">
+                        <div class="position-relative mb-3 ">
 
-                        <a class="d-block" href="details.html"><img class="img-fluid w-100" src="images/product-4.jpg" alt="..."></a>
-                        <div class="product-overlay">
-                            <ul class="mb-0 list-inline">
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                            </ul>
+                            <a class="d-block " href="details.html "><img class="img-fluid w-100 " src="images/product-3.jpg " alt="... "></a>
+                            <div class="product-overlay ">
+                                <ul class="mb-0 list-inline ">
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-outline-dark " href="# "><i class="far fa-heart "></i></a></li>
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-dark add-to-cart " href="# ">Add to cart</a></li>
+                                    <li class="list-inline-item mr-0 "><a class="btn btn-outline-dark " href="# "><i class="fas fa-expand "></i></a></li>
+                                </ul>
+                            </div>
                         </div>
+                        <h6> <a class="reset-anchor " href="details.html ">Футболка</a></h6>
+                        <p class="small text-muted ">$25</p>
                     </div>
-                    <h6> <a class="reset-anchor" href="details.html">Часы</a></h6>
-                    <p class="small text-muted">$351</p>
                 </div>
-            </div>
-            <!-- PRODUCT-->
-            <div class="col-3">
-                <div class="product text-center">
-                    <div class="position-relative mb-3">
+                <!-- PRODUCT-4-->
+                <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                    <div class="product text-center ">
+                        <div class="position-relative mb-3 ">
 
-                        <a class="d-block" href="details.html"><img class="img-fluid w-100" src="images/product-5.jpg" alt="..."></a>
-                        <div class="product-overlay">
-                            <ul class="mb-0 list-inline">
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                            </ul>
+                            <a class="d-block " href="details.html "><img class="img-fluid w-100 " src="images/product-4.jpg " alt="... "></a>
+                            <div class="product-overlay ">
+                                <ul class="mb-0 list-inline ">
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-outline-dark " href="# "><i class="far fa-heart "></i></a></li>
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-dark add-to-cart " href="# ">Add to cart</a></li>
+                                    <li class="list-inline-item mr-0 "><a class="btn btn-outline-dark " href="# "><i class="fas fa-expand "></i></a></li>
+                                </ul>
+                            </div>
                         </div>
+                        <h6> <a class="reset-anchor " href="details.html ">Часы</a></h6>
+                        <p class="small text-muted ">$351</p>
                     </div>
-                    <h6> <a class="reset-anchor" href="details.html">Смарт Часы</a></h6>
-                    <p class="small text-muted">$250</p>
                 </div>
-            </div>
-            <!-- PRODUCT-->
-            <div class="col-3">
-                <div class="product text-center">
-                    <div class="position-relative mb-3">
+                <!-- PRODUCT-5-->
+                <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                    <div class="product text-center ">
+                        <div class="position-relative mb-3 ">
 
-                        <a class="d-block" href="details.html"><img class="img-fluid w-100" src="images/product-6.jpg" alt="..."></a>
-                        <div class="product-overlay">
-                            <ul class="mb-0 list-inline">
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                            </ul>
+                            <a class="d-block " href="details.html "><img class="img-fluid w-100 " src="images/product-5.jpg " alt="... "></a>
+                            <div class="product-overlay ">
+                                <ul class="mb-0 list-inline ">
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-outline-dark " href="# "><i class="far fa-heart "></i></a></li>
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-dark add-to-cart " href="# ">Add to cart</a></li>
+                                    <li class="list-inline-item mr-0 "><a class="btn btn-outline-dark " href="# "><i class="fas fa-expand "></i></a></li>
+                                </ul>
+                            </div>
                         </div>
+                        <h6> <a class="reset-anchor " href="details.html ">Смарт Часы</a></h6>
+                        <p class="small text-muted ">$250</p>
                     </div>
-                    <h6> <a class="reset-anchor" href="details.html">Кросовки</a></h6>
-                    <p class="small text-muted">$300</p>
                 </div>
-            </div>
-            <!-- PRODUCT-->
-            <div class="col-3">
-                <div class="product text-center">
-                    <div class="position-relative mb-3">
+                <!-- PRODUCT-6-->
+                <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                    <div class="product text-center ">
+                        <div class="position-relative mb-3 ">
 
-                        <a class="d-block" href="details.html"><img class="img-fluid w-100" src="images/product-7.jpg" alt="..."></a>
-                        <div class="product-overlay">
-                            <ul class="mb-0 list-inline">
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                            </ul>
+                            <a class="d-block " href="details.html "><img class="img-fluid w-100 " src="images/product-6.jpg " alt="... "></a>
+                            <div class="product-overlay ">
+                                <ul class="mb-0 list-inline ">
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-outline-dark " href="# "><i class="far fa-heart "></i></a></li>
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-dark add-to-cart " href="# ">Add to cart</a></li>
+                                    <li class="list-inline-item mr-0 "><a class="btn btn-outline-dark " href="# "><i class="fas fa-expand "></i></a></li>
+                                </ul>
+                            </div>
                         </div>
+                        <h6> <a class="reset-anchor " href="details.html ">Кросовки</a></h6>
+                        <p class="small text-muted ">$300</p>
                     </div>
-                    <h6> <a class="reset-anchor" href="details.html">Туалетая вода</a></h6>
-                    <p class="small text-muted">$25</p>
                 </div>
-            </div>
-            <!-- PRODUCT-->
-            <div class="col-3">
-                <div class="product text-center">
-                    <div class="position-relative mb-3">
+                <!-- PRODUCT-7-->
+                <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                    <div class="product text-center ">
+                        <div class="position-relative mb-3 ">
 
-                        <a class="d-block" href="details.html"><img class="img-fluid w-100" src="images/product-8.jpg" alt="..."></a>
-                        <div class="product-overlay">
-                            <ul class="mb-0 list-inline">
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                            </ul>
+                            <a class="d-block " href="details.html "><img class="img-fluid w-100 " src="images/product-7.jpg " alt="... "></a>
+                            <div class="product-overlay ">
+                                <ul class="mb-0 list-inline ">
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-outline-dark " href="# "><i class="far fa-heart "></i></a></li>
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-dark add-to-cart " href="# ">Add to cart</a></li>
+                                    <li class="list-inline-item mr-0 "><a class="btn btn-outline-dark " href="# "><i class="fas fa-expand "></i></a></li>
+                                </ul>
+                            </div>
                         </div>
+                        <h6> <a class="reset-anchor " href="details.html ">Туалетая вода</a></h6>
+                        <p class="small text-muted ">$25</p>
                     </div>
-                    <h6> <a class="reset-anchor" href="details.html">Часы Apple</a></h6>
-                    <p class="small text-muted">$351</p>
+                </div>
+                <!-- PRODUCT-8-->
+                <div class="col-sm-6 col-lg-4 col-xl-3 ">
+                    <div class="product text-center ">
+                        <div class="position-relative mb-3 ">
+
+                            <a class="d-block " href="details.html "><img class="img-fluid w-100 " src="images/product-8.jpg " alt="... "></a>
+                            <div class="product-overlay ">
+                                <ul class="mb-0 list-inline ">
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-outline-dark " href="# "><i class="far fa-heart "></i></a></li>
+                                    <li class="list-inline-item m-0 p-0 "><a class="btn btn-dark add-to-cart " href="# ">Add to cart</a></li>
+                                    <li class="list-inline-item mr-0 "><a class="btn btn-outline-dark " href="# "><i class="fas fa-expand "></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h6> <a class="reset-anchor " href="details.html ">Часы Apple</a></h6>
+                        <p class="small text-muted ">$351</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--OverLay 2-->
-    <div class="overlay-trend">
-        <div class="text-brown font-weight-bold">
-            <h3 class="text-dark"> Заголовок 2-рого оверлея</h3>
-            <p>Текст во 2-ром оверлее,Текст во 2-ром оверлее,Текст во 2-ром оверлее.</p>
-            <p class="text-white">...</p>
-        </div>
-        <ul class="list-unstyled text-brown font-weight-bold">
-            <li class="list-inline-item">
-                <blockquote>HTML-элемент blockquote (от англ. Block Quotation) указывает на то, что заключенный в нем текст является развернутой цитатой. Обычно он (текст) визуально выделяется наклонным (смотри Примечание, где говорится о том, как это изменить).
-                    URI на источник цитаты можно указать в атрибуте cite, тогда как текстовое представление источника может быть задано элементом <cite>.</blockquote>
+        </section>
+
+        <!--OverLay 2-->
+        <section class="overlay-trend ">
+            <div class="text-brown font-weight-bold ">
+                <h3 class="text-dark "> Заголовок 2-рого оверлея</h3>
+                <p>Текст во 2-ром оверлее,Текст во 2-ром оверлее,Текст во 2-ром оверлее.</p>
+                <p class="text-white ">...</p>
+            </div>
+            <ul class="list-unstyled text-brown font-weight-bold ">
+                <li class="list-inline-item ">
+                    <blockquote>HTML-элемент blockquote (от англ. Block Quotation) указывает на то, что заключенный в нем текст является развернутой цитатой. Обычно он (текст) визуально выделяется наклонным (смотри Примечание, где говорится о том, как это изменить).
+                        URI на источник цитаты можно указать в атрибуте cite, тогда как текстовое представление источника может быть задано элементом <cite>.</blockquote>
            <p>MDN Web Docs / Web</p>
-           <p class="text-white">...</p>
+           <p class="text-white ">...</p>
                     </li>
             <li>
-                <blockquote cite="http://developer.mozilla.org">
+                <blockquote cite="http://developer.mozilla.org ">
                     <p>This is a quotation taken from the Mozilla Developer Center.</p>
                   </blockquote>
             </li>
         </ul>
-    </div>
-   <!-- SERVICES-->
-   <section class="py-5 bg-brown">
+        </section>
+
+        <!-- SERVICES-->
+        <section class="py-5 bg-brown ">
     <!-- container -->
-    <div class="container">
+    <div class="container ">
 
         <!-- container -->
         <!-- row -->
-        <div class="row text-center">
+        <div class="row text-center ">
             <!-- 3 columns -->
-            <div class="col-4 mb-3">
-                <div class="d-inline-block">
-                    <div class="media align-items-end">
-                        <div class="d-inline-block">
-                            <h6 class="text-uppercase">Free shipping</h6>
-                            <p class="text-small text-muted">Free shipping worlwide</p>
+            <div class="col-lg-4 mb-3 mb-lg-0 ">
+                <div class="d-inline-block ">
+                    <div class="media align-items-end ">
+                        <i class="far fa-heart "></i>
+                        <div class="media-body text-left ml-3 ">
+                            <h6 class="text-uppercase mb-1 ">Free shipping</h6>
+                            <p class="text-small mb-0 text-muted ">Free shipping worlwide</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-4 mb-3">
-                <div class="d-inline-block">
-                    <div class="media align-items-end">
-                        <div class="d-inline-block">
-                            <h6 class="text-uppercase">24 x 7 service</h6>
-                            <p class="text-small text-muted">Free shipping worlwide</p>
+            <div class="col-lg-4 mb-3 mb-lg-0 ">
+                <div class="d-inline-block ">
+                    <div class="media align-items-end ">
+                        <i class="far fa-heart "></i>
+                        <div class="media-body text-left ml-3 ">
+                            <h6 class="text-uppercase mb-1 ">24 x 7 service</h6>
+                            <p class="text-small mb-0 text-muted ">Free shipping worlwide</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="d-inline-block">
-                    <div class="media align-items-end">
-                        <div class="d-inline-block">
-                            <h6 class="text-uppercase">Festival offer</h6>
-                            <p class="text-small text-muted">Free shipping worlwide</p>
+            <div class="col-lg-4 ">
+                <div class="d-inline-block ">
+                    <div class="media align-items-end ">
+                        <i class="far fa-heart "></i>
+                        <div class="media-body text-left ml-3 ">
+                            <h6 class="text-uppercase mb-1 ">Festival offer</h6>
+                            <p class="text-small mb-0 text-muted ">Free shipping worlwide</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-    <!--newsLetter-->
-    <section class="py-5">
-        <div class="container p-0">
-            <div class="row">
-                <div class="col-6 mb-3">
-                    <h5>Подписка на новостую ленту</h5>
-                    <p class="text-small text-muted">Ежемесячная подписка на новостную ленту.</p>
-                </div>
-                <div class="col-6">
-                    <form action="#">
-                    <div>
-                        <input type="email" class="mb-4 form-control" placeholder="Enter your email address">
-                        <div>
-                            <button type="submit">Subscribe</button>
-                        </div>
-                    </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        </section>
 
-    </section>
+        <!--newsLetter Скопированно-->
+        <section class="text-center border border-light p-5 my-3 ">
+            <!-- Subscribe -->
+            <h2 class="h4 mb-3 ">Let's be friends!</h2>
+            <div class="text-center border border-light p-5 ">
+                <form class="flex-form mb-5 ">
+                    <label for="from ">
+                    <i class="fas fa-info-circle "></i>
+                </label>
+                    <input type="email " placeholder="Enter your email address ">
+                    <input type="submit " value="Subscribe ">
+                </form>
+            </div>
+            <p class="mt-3 ">Join our mailing list. We write rarely, but only the best content.</p>
+            <p class="my-3 ">
+                <a href=" " target="_blank ">See the last newsletter</a>
+            </p>
+        </section>
+    </div>
+
     <!--Футер-->
-    <footer class="bg-dark text-white">
-        <div class="container py-4">
+    <footer class="bg-dark text-white m-3 ">
+        <div class="container py-4 ">
             <!--row-->
-            <div class="py-5 row">
+            <div class="py-5 row ">
                 <!--3 колонки-->
-                <div class="col-4 mb-3 float-left">
-                    <h6 class="text-uppercase">Customer services</h6>
-                    <ul class="list-unstyled">
-                        <li><a class="footer-link" href="#">Help &amp; Contact Us</a></li>
-                        <li><a class="footer-link" href="#">Returns &amp; Refunds</a></li>
-                        <li><a class="footer-link" href="#">Online Stores</a></li>
-                        <li><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
+                <div class="col-md-4 mb-3 mb-md-0 ">
+                    <h6 class="text-uppercase ">Customer services</h6>
+                    <ul class="list-unstyled ">
+                        <li><a class="footer-link " href="# ">Help &amp; Contact Us</a></li>
+                        <li><a class="footer-link " href="# ">Returns &amp; Refunds</a></li>
+                        <li><a class="footer-link " href="# ">Online Stores</a></li>
+                        <li><a class="footer-link " href="# ">Terms &amp; Conditions</a></li>
 
                     </ul>
                 </div>
-                <div class="col-4 mb-3 float-left">
-                    <h6 class="text-uppercase">Company</h6>
-                    <ul class="list-unstyled">
-                        <li><a class="footer-link" href="#">What We Do</a></li>
-                        <li><a class="footer-link" href="#">Available Services</a></li>
-                        <li><a class="footer-link" href="#">Latest Posts</a></li>
-                        <li><a class="footer-link" href="#">FAQs</a></li>
+                <div class="col-md-4 mb-3 mb-md-0 ">
+                    <h6 class="text-uppercase ">Company</h6>
+                    <ul class="list-unstyled ">
+                        <li><a class="footer-link " href="# ">What We Do</a></li>
+                        <li><a class="footer-link " href="# ">Available Services</a></li>
+                        <li><a class="footer-link " href="# ">Latest Posts</a></li>
+                        <li><a class="footer-link " href="# ">FAQs</a></li>
 
                     </ul>
 
                 </div>
-                <div class="col-4 mb-4">
-                    <h6 class="text-uppercase">Social media</h6>
-                    <ul class="list-unstyled">
-                        <li><a class="footer-link twitter" href="#"> Twitter</a></li>
-                        <li><a class="footer-link facebook" href="#"> Facebook</a></li>
-                        <li><a class="footer-link instagram" href="#"> Instagram</a></li>
-                        <li><a class="footer-link google" href="#"> Google</a></li>
+                <div class="col-md-4 ">
+                    <h6 class="text-uppercase ">Social media</h6>
+                    <ul class="list-unstyled footer-socials social-icon ">
+                        <li><a class="footer-link twitter " href="https://twitter.com/Pilavpowa "><i class="fab fa-twitter "></i> Twitter</a></li>
+                        <li><a class="footer-link facebook " href="https://www.facebook.com/Pilavpowa "><i class="fab fa-facebook "></i> Facebook</a></li>
+                        <li><a class="footer-link instagram " href="https://www.instagram.com/pilav_/ "><i class="fab fa-instagram "></i> Instagram</a></li>
+                        <li><a class="footer-link google " href="# "><i class="fab fa-google-plus "></i> Google</a></li>
 
                     </ul>
                 </div>
             </div>
-            <div class="border-top pt-4" style="border-color: #1d1d1d !important;">
+            <div class="border-top pt-4 " style="border-color: #1d1d1d !important; ">
                 <!--2 colums-->
-                <div class="row">
-                    <div class="col-6">
-                        <p class="small text-muted mb-0">&copy; 2020 All right reserved.</p>
+                <div class="row ">
+                    <div class="col-lg-6 ">
+                        <p class="small text-muted mb-0 ">&copy; 2020 All right reserved.</p>
                     </div>
-                    <div class="col-6 text-right">
-                        <p class="text-white reset-anchor">Template desined by <a href="#">Alexander</a></p>
+                    <div class="col-lg-6 text-right ">
+                        <p class="text-white reset-anchor ">Template desined by <a href="# ">Alexander</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <template id="cartItem">
+        <div  class="cart-item">
+        <div class="picture product-img">
+            <img src="images/product-3.jpg" alt="..." class="img-fluid w-100">
+        </div>
+        <div class="product-name p-auto">
+            Red digital smartwatch
+        </div>
+        <div class="remove-btn text-right">
+            <a class="reset-anchor m-auto" href="#">
+                <i class="fas fa-trash-alt"></i>
+            </a>
+        </div>
+        <div class="quantity">
+            <div class="border d-flex justify-content-around mx-auto">
+                <button class="dec-btn p-0"><i class="fas fa-caret-left"></i></button>
+                <input class="form-control form-control-sm border-0 p-0" name="quantity" type="text" value="1">
+                <button class="inc-btn p-0"><i class="fas fa-caret-right"></i></button>
+            </div>
+        </div>
+        <div class="price product-price">
+            $250
+        </div>
+    </div>
+    </template>
+
+    <script src="js/app.js "></script>
+    <script src="js/dom.js"></script>
+
 </body>
 
 </html>

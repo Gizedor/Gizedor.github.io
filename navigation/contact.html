@@ -8,27 +8,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800">
     <link href="../css/reset.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/grid.css" rel="stylesheet">
+    <link href="../css/form.css" rel="stylesheet">
     <link href="../css/forms.css" rel="stylesheet">
+    <link href="../css/grid.css" rel="stylesheet">
+    <link href="../css/nav.css" rel="stylesheet">
+    <link href="../css/sffects.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <header class="mainHeader">
+    <!--Dinamick Hamburber Header-->
+    <header class="header">
         <div class="container px-3">
             <nav class="navbar px-0">
-                <!--Brand-->
-                <a class="navbar-brand" href="../index.html"><span class="font-weight-bold text-golden text-uppercase">Git.hub Trade</span></a>
-                <div class="container">
+                <input class="trigger" type="checkbox" id="hamburgerButton">
+                <label for="hamburgerButton"><a class="navbar-brand" href="../index.html"><span class="font-weight-bold text-golden text-uppercase">Git.hub Trade</span></a></label>
+
+                <div class="collapse">
+                    <a class="navbar-brand" href="../index.html"><span class="font-weight-bold text-golden text-uppercase">Git.hub Trade</span></a>
                     <!--1вый блок-->
                     <ul class="navbar-nav mr-auto">
                         <!--home-->
-                        <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link " href="../index.html">Home</a></li>
                         <!--shop-->
-                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../shop.html">Shop</a></li>
                         <!--Contacts-->
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                         <!--DropdownMeny-->
                         <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
                         <div hidden>
@@ -44,7 +50,7 @@
                     <ul class="navbar-nav ml-auto">
                         <!--Корзина-->
                         <li class="nav-item">
-                            <a class="nav-link" href="cart.html"><i class="fas fa-dolly-flatbed text-gray"></i>Cart<small class="text-white">(корзина пуста)</small></a>
+                            <a class="nav-link" href="navigation/cart.html"><i class="fas fa-dolly-flatbed text-gray"></i>Cart<small class="text-white">(корзина пуста)</small></a>
                         </li>
                         <!--Лайк-->
                         <li class="nav-item">
@@ -64,14 +70,25 @@
         <div class="row">
             <form method="POST" action="http://localhost" class="text-center border border-light p-5 m-auto">
                 <h2 class="h2 mb-4">Contact Us</h2>
-                <div class="row mb-4">
+                <div class="mb-4">
                     <!--Имя-->
                     <input type="text" required name="first_name" class="mb-4" placeholder="First_name">
                     <!--Фамилия-->
                     <input type="text" required name="last_name" class="mb-4" placeholder="Last_name">
                 </div>
+                <!--E-mail-->
                 <input type="email" required name="email" placeholder="Enter E-mail" class="mb-4 form-control">
-                <div class="row mb-4 justify-content-around">
+
+                <!-- Subject -->
+                <label>Subject</label>
+                <select class="custom-select mb-4">
+                     <option value="" disabled>Choose option</option>
+                     <option value="1" selected>Feedback</option>
+                     <option value="2">Report a bug</option>
+                     <option value="3">Feature request</option>
+                     <option value="4">Feature request</option>
+                 </select>
+                <div class="mb-4 justify-content-around">
                     <textarea class="form-control" rows="5" placeholder="Your massage"></textarea>
                 </div>
                 <button type="submit" class="btn btn-dark btn-block my-4">Send massage</button>
