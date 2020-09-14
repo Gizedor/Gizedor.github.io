@@ -1,0 +1,273 @@
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
+    10% {
+        left: 0%;
+    }
+    20% {
+        left: -100%;
+    }
+    30% {
+        left: -200%;
+    }
+    40% {
+        left: -300%;
+    }
+    50% {
+        left: -400%;
+    }
+    60% {
+        left: -300%;
+    }
+    70% {
+        left: -200%;
+    }
+    80% {
+        left: -100%;
+    }
+    95% {
+        left: -100%;
+    }
+    100% {
+        left: -0%;
+    }
+}
+
+.carousel {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.slides .slide {
+    width: 20%;
+}
+
+.shop-slide {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+}
+
+
+/*.slide:nth-of-type(1) {
+    top: 0;
+    left: 0;
+    right: 0;
+    background: red;
+}
+
+.slide:nth-of-type(2) {
+    top: 0;
+    left: 0;
+    right: 0;
+    background: blue;
+}
+
+.slide:nth-of-type(3) {
+    top: 0;
+    left: 0;
+    right: 0;
+    background: yellow;
+}
+
+.slide:nth-of-type(4) {
+    top: 0;
+    left: 0;
+    right: 0;
+    background: purple;
+}
+
+.slide:nth-of-type(5) {
+    top: 0;
+    left: 0;
+    right: 0;
+    background: green;
+}*/
+
+.items {
+    width: 500%;
+    line-height: 0;
+    margin: 0;
+    position: relative;
+}
+
+.items:hover {
+    animation: 30s slider infinite;
+}
+
+.items:hover::after {
+    animation-play-state: paused;
+}
+
+.slide2 {
+    position: absolute;
+    top: 10em;
+    left: 0;
+}
+
+.slide4 {
+    position: absolute;
+    top: 10em;
+    left: 0;
+}
+
+.overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.indicator {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background: yellowgreen;
+    border: green 2px solid;
+    margin: 0 2.5px;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.controls {
+    display: none;
+}
+
+
+/**1-st*/
+
+input.activator:nth-of-type(1):checked~.slides .items {
+    margin-left: 0;
+}
+
+input.activator:nth-of-type(1):checked~.indicators .indicator:nth-of-type(1) {
+    margin-left: 0;
+}
+
+input.activator:nth-of-type(1):checked~.controls:nth-of-type(1) {
+    display: block;
+    opacity: 1;
+}
+
+
+/*2-cnd*/
+
+input.activator:nth-of-type(2):checked~.slides .items {
+    margin-left: -100%;
+}
+
+input.activator:nth-of-type(2):checked~.indicators .indicator:nth-of-type(2) {
+    margin-left: -100%;
+}
+
+input.activator:nth-of-type(2):checked~.controls:nth-of-type(2) {
+    display: block;
+    opacity: 1;
+}
+
+
+/*3-thrd*/
+
+input.activator:nth-of-type(3):checked~.slides .items {
+    margin-left: -200%;
+}
+
+input.activator:nth-of-type(3):checked~.indicators .indicator:nth-of-type(3) {
+    margin-left: -200%;
+}
+
+input.activator:nth-of-type(3):checked~.controls:nth-of-type(3) {
+    display: block;
+    opacity: 1;
+}
+
+
+/*4-ours*/
+
+input.activator:nth-of-type(4):checked~.slides .items {
+    margin-left: -300%;
+}
+
+input.activator:nth-of-type(4):checked~.indicators .indicator:nth-of-type(4) {
+    margin-left: -300%;
+}
+
+input.activator:nth-of-type(4):checked~.controls:nth-of-type(4) {
+    display: block;
+    opacity: 1;
+}
+
+input.activator:nth-of-type(5):checked~.slides .items {
+    margin-left: -400%;
+}
+
+input.activator:nth-of-type(5):checked~.indicators .indicator:nth-of-type(5) {
+    margin-left: -400%;
+}
+
+input.activator:nth-of-type(5):checked~.controls:nth-of-type(5) {
+    display: block;
+    opacity: 1;
+}
+
+.activator {
+    display: none;
+}
+
+.control {
+    height: 20px;
+    width: 20px;
+    margin-top: -15px;
+    top: 50%;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    border-width: 7px 7px 0 0;
+    border-style: solid;
+    border-color: black;
+    opacity: 0.3;
+    outline: 0px;
+    z-index: 3;
+}
+
+.control:hover {
+    opacity: 1;
+}
+
+.control-backward {
+    left: 10px;
+    transform: rotate(-135deg);
+}
+
+.control-forward {
+    right: 10px;
+    transform: rotate(45deg);
+}
+
+.items {
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.indicator {
+    transition: opacity 0.3s ease-out;
+}

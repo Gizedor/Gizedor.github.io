@@ -1,4 +1,5 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 *,
 *::before,
 *::after {
@@ -7,12 +8,16 @@
 
 body {
     color: #111111;
-    background-color: rgb(204, 206, 184);
+    background-color: #ede6b0;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
+}
+
+.header {
+    background-color: #829079;
 }
 
 h1,
@@ -37,25 +42,14 @@ img {
 }
 
 a {
-    color: #dcb14a;
+    color: #b9925e;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:hover {
-    color: #fff;
+    color: #a20;
     text-decoration: underline;
-}
-
-.mainHeader {
-    background-color: green;
-}
-
-
-/*text-color*/
-
-.text-brown {
-    color: brown;
 }
 
 .text-white {
@@ -72,6 +66,22 @@ a:hover {
 
 .text-dark {
     color: #111111;
+}
+
+.text-olive {
+    color: #829079;
+}
+
+.text-cream {
+    color: #ede6b9;
+}
+
+.text-brown {
+    color: #b9925e;
+}
+
+.text-briez {
+    color: #36b5ff;
 }
 
 .text-uppercase {
@@ -123,7 +133,7 @@ a:hover {
 }
 
 .btn-dark:hover {
-    color: #fff;
+    color: #dcb14a;
     background-color: #23272b;
     border-color: #1d2124;
 }
@@ -138,6 +148,34 @@ a:hover {
 .btn-link {
     font-weight: 400;
     color: #999;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-block+.btn-block {
+    margin-top: 0.5rem;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.btn-info:focus,
+.btn-info.focus {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
 }
 
 
@@ -156,6 +194,10 @@ a:hover {
 
 .bg-dark {
     background-color: #343a40 !important;
+}
+
+.bg-deepG {
+    background-color: #1d3c45;
 }
 
 a.bg-dark:hover,
@@ -177,10 +219,6 @@ button.bg-dark:focus {
     background-color: #f8f9fa !important;
 }
 
-.bg-brown {
-    background-color: rgb(224, 154, 154);
-}
-
 a.bg-light:hover,
 a.bg-light:focus,
 button.bg-light:hover,
@@ -192,11 +230,11 @@ button.bg-light:focus {
 /* border */
 
 .border {
-    border: 1px solid #dee2e6 !important;
+    border: 2px solid #dee2e6 !important;
 }
 
 .border-top {
-    border-top: 1px solid #dee2e6 !important;
+    border-top: 1px solid #1d1d1d !important;
 }
 
 .border-right {
@@ -209,6 +247,62 @@ button.bg-light:focus {
 
 .border-left {
     border-left: 1px solid #dee2e6 !important;
+}
+
+.border-0 {
+    border: 0 !important;
+}
+
+.border-top-0 {
+    border-top: 0 !important;
+}
+
+.border-right-0 {
+    border-right: 0 !important;
+}
+
+.border-bottom-0 {
+    border-bottom: 0 !important;
+}
+
+.border-left-0 {
+    border-left: 0 !important;
+}
+
+.border-primary {
+    border-color: #007bff !important;
+}
+
+.border-secondary {
+    border-color: #6c757d !important;
+}
+
+.border-success {
+    border-color: #28a745 !important;
+}
+
+.border-info {
+    border-color: #17a2b8 !important;
+}
+
+.border-warning {
+    border-color: #ffc107 !important;
+}
+
+.border-danger {
+    border-color: #dc3545 !important;
+}
+
+.border-light {
+    border-color: #f8f9fa !important;
+}
+
+.border-dark {
+    border-color: #343a40 !important;
+}
+
+.border-white {
+    border-color: #fff !important;
 }
 
 .hero {
@@ -237,9 +331,6 @@ button.bg-light:focus {
     background-attachment: fixed;
 }
 
-
-/* footer */
-
 .reset-anchor {
     color: inherit;
 }
@@ -247,4 +338,63 @@ button.bg-light:focus {
 .reset-anchor:hover,
 .reset-anchor:focus {
     text-decoration: none;
+}
+
+
+/* float */
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.float-none {
+    float: none !important;
+}
+
+.cf {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.border {
+    border: 1px solid #dee2e6 !important;
+}
+
+@media (min-width: 576px) {
+    .border-sm {
+        border: 1px solid #dee2e6 !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .border-md {
+        border: 1px solid #dee2e6 !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .border-lg {
+        border: 1px solid #dee2e6 !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .border-xl {
+        border: 1px solid #dee2e6 !important;
+    }
 }
