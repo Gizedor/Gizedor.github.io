@@ -39,25 +39,25 @@ class App {
             liClass: '',
             aClass: 'footer-link twitter',
             icon: 'fab fa-twitter',
-            capture: 'Twitter'
+            capture: ' Twitter'
         },
         {
             liClass: '',
             aClass: 'footer-link facebook',
             icon: 'fab fa-facebook',
-            capture: 'Facebook'
+            capture: ' Facebook'
         },
         {
             liClass: '',
-            aClass: 'footer-link finstagram',
+            aClass: 'footer-link instagram',
             icon: 'fab fa-instagram',
-            capture: 'Instagram'
+            capture: ' Instagram'
         },
         {
             liClass: '',
             aClass: 'footer-link google-plus',
             icon: 'fab fa-google-plus',
-            capture: 'Google'
+            capture: ' Google'
         },
     ];
     sidebar = document.querySelector(".sidebar");

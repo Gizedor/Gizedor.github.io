@@ -3,20 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git.hub Trade Shop</title>
+    <meta name="viewport" content="width=device-width? initial-scale=1.0">
+    <title>Интернет-магазин ШМОТКА™: официальный сайт самого популярного онлайн-магазина</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800">
     <link href="css/reset.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
-    <link href="css/forms.css" rel="stylesheet">
-    <link href="css/grid.css" rel="stylesheet">
-    <link href="css/nav.css" rel="stylesheet">
-    <link href="css/sffects.css" rel="stylesheet">
+    <link href="css/variables.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/effect.css" rel="stylesheet">
     <link href="css/product.css" rel="stylesheet">
-    <link href="css/animation.css" rel="stylesheet">
-
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,10 +30,10 @@
                 <div class="links-container">
                     <ul class="links effect-brackets">
                         <li>
-                            <a href="#home" class="scroll-link">Home</a>
+                            <a href="index.html" class="scroll-link">Home</a>
                         </li>
                         <li>
-                            <a href="shop.html" class="scroll-link">Shop</a>
+                            <a href="#shop" class="scroll-link">Shop</a>
                         </li>
                         <li>
                             <a href="contact.html" class="scroll-link">Contact</a>
@@ -67,6 +67,19 @@
             </div>
         </nav>
     </header>
+    <!-- aside -->
+    <aside class="sidebar bg-light">
+        <div class="sidebar-header">
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            <h5 class="logo">Shopping Cart</h5>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-footer">
+            <h3>Общая сумма : $<span class="cart-total">0</span></h3>
+            <button class="clear-cart">Очистить корзину</button>
+        </div>
+    </aside>
 
     <div class="container">
         <!-- HERO SECTION-->
@@ -188,247 +201,8 @@
                             </div>
                         </div>
                         <!--Продукты-->
-                        <div class="row">
-                            <!--1вый-->
-                            <div class="col-4">
-                                <div class="product text-center">
-                                    <div class="mb-3 position-relative">
-                                        <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="images/product-1.jpg" alt="...">
-                                        </a>
-                                        <div class="product-overlay">
-                                            <ul class="mb-0 list-inline">
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h6>
-                                        <a class="reset-anchor" href="detail.html">Китайские наушники</a></h6>
-                                    <p class="small text-muted">250$</p>
-                                </div>
-                            </div>
-                            <!--2рой-->
-                            <div class="col-4">
-                                <div class="product text-center">
-                                    <div class="mb-3 position-relative">
-                                        <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="images/product-2.jpg" alt="...">
-                                        </a>
-                                        <div class="product-overlay">
-                                            <ul class="mb-0 list-inline">
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h6>
-                                        <a class="reset-anchor" href="detail.html">Красный кросовки</a></h6>
-                                    <p class="small text-muted">350$</p>
-                                </div>
-                            </div>
-                            <!--3тий-->
-                            <div class="col-4">
-                                <div class="product text-center">
-                                    <div class="mb-3 position-relative">
-                                        <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="images/product-3.jpg" alt="...">
-                                        </a>
-                                        <div class="product-overlay">
-                                            <ul class="mb-0 list-inline">
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h6>
-                                        <a class="reset-anchor" href="detail.html">Хлопковая футболка</a></h6>
-                                    <p class="small text-muted">25$</p>
-                                </div>
-                            </div>
-                            <!--4тый-->
-                            <div class="col-4">
-                                <div class="product text-center">
-                                    <div class="mb-3 position-relative">
-                                        <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="images/product-4.jpg" alt="...">
-                                        </a>
-                                        <div class="product-overlay">
-                                            <ul class="mb-0 list-inline">
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h6>
-                                        <a class="reset-anchor" href="detail.html">Китайские наушники</a></h6>
-                                    <p class="small text-muted">250$</p>
-                                </div>
-                            </div>
-                            <!--5тый-->
-                            <div class="col-4">
-                                <div class="product text-center">
-                                    <div class="mb-3 position-relative">
-                                        <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="images/product-5.jpg" alt="...">
-                                        </a>
-                                        <div class="product-overlay">
-                                            <ul class="mb-0 list-inline">
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h6>
-                                        <a class="reset-anchor" href="detail.html">Китайские наушники</a></h6>
-                                    <p class="small text-muted">250$</p>
-                                </div>
-                            </div>
-                            <!--6той-->
-                            <div class="col-4">
-                                <div class="product text-center">
-                                    <div class="mb-3 position-relative">
-                                        <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="images/product-6.jpg" alt="...">
-                                        </a>
-                                        <div class="product-overlay">
-                                            <ul class="mb-0 list-inline">
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h6>
-                                        <a class="reset-anchor" href="detail.html">Китайские наушники</a></h6>
-                                    <p class="small text-muted">250$</p>
-                                </div>
-                            </div>
-                            <!--7мой-->
-                            <div class="col-4">
-                                <div class="product text-center">
-                                    <div class="mb-3 position-relative">
-                                        <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="images/product-7.jpg" alt="...">
-                                        </a>
-                                        <div class="product-overlay">
-                                            <ul class="mb-0 list-inline">
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h6>
-                                        <a class="reset-anchor" href="detail.html">Китайские наушники</a></h6>
-                                    <p class="small text-muted">250$</p>
-                                </div>
-                            </div>
-                            <!--8мой-->
-                            <div class="col-4">
-                                <div class="product text-center">
-                                    <div class="mb-3 position-relative">
-                                        <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="images/product-8.jpg" alt="...">
-                                        </a>
-                                        <div class="product-overlay">
-                                            <ul class="mb-0 list-inline">
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h6>
-                                        <a class="reset-anchor" href="detail.html">Китайские наушники</a></h6>
-                                    <p class="small text-muted">250$</p>
-                                </div>
-                            </div>
-                            <!--9тый-->
-                            <div class="col-4">
-                                <div class="product text-center">
-                                    <div class="mb-3 position-relative">
-                                        <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="images/product-9.jpg" alt="...">
-                                        </a>
-                                        <div class="product-overlay">
-                                            <ul class="mb-0 list-inline">
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h6>
-                                        <a class="reset-anchor" href="detail.html">Китайские наушники</a></h6>
-                                    <p class="small text-muted">250$</p>
-                                </div>
-                            </div>
-                            <!--10тый-->
-                            <div class="col-4">
-                                <div class="product text-center">
-                                    <div class="mb-3 position-relative">
-                                        <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="images/product-10.jpg" alt="...">
-                                        </a>
-                                        <div class="product-overlay">
-                                            <ul class="mb-0 list-inline">
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h6>
-                                        <a class="reset-anchor" href="detail.html">Китайские наушники</a></h6>
-                                    <p class="small text-muted">250$</p>
-                                </div>
-                            </div>
-                            <!--11тый-->
-                            <div class="col-4">
-                                <div class="product text-center">
-                                    <div class="mb-3 position-relative">
-                                        <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="images/product-11.jpg" alt="...">
-                                        </a>
-                                        <div class="product-overlay">
-                                            <ul class="mb-0 list-inline">
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h6>
-                                        <a class="reset-anchor" href="detail.html">Китайские наушники</a></h6>
-                                    <p class="small text-muted">250$</p>
-                                </div>
-                            </div>
-                            <!--12тый-->
-                            <div class="col-4">
-                                <div class="product text-center">
-                                    <div class="mb-3 position-relative">
-                                        <a class="d-block" href="detail.html">
-                                            <img class="img-fluid w-100" src="images/product-12.jpg" alt="...">
-                                        </a>
-                                        <div class="product-overlay">
-                                            <ul class="mb-0 list-inline">
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-outline-dark" href="#"><i class="far fa-heart"></i></a></li>
-                                                <li class="list-inline-item m-0 p-0"><a class="btn btn-dark" href="cart.html">Add to cart</a></li>
-                                                <li class="list-inline-item mr-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-expand"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <h6>
-                                        <a class="reset-anchor" href="detail.html">Китайские наушники</a></h6>
-                                    <p class="small text-muted">250$</p>
-                                </div>
-                            </div>
+                        <div class="row showcase">
+
                         </div>
                     </div>
 
@@ -442,56 +216,50 @@
 
     </div>
 
-    <footer class="bg-dark text-white">
-        <div class="container py-4">
+    <footer class="bg-dark text-white m-3 ">
+        <div class="container py-4 ">
             <!--row-->
             <div class="py-5 row">
                 <!--3 колонки-->
-                <div class="col-4 mb-3 float-left">
-                    <h6 class="text-uppercase">Customer services</h6>
-                    <ul class="list-unstyled">
-                        <li><a class="footer-link" href="#">Help &amp; Contact Us</a></li>
-                        <li><a class="footer-link" href="#">Returns &amp; Refunds</a></li>
-                        <li><a class="footer-link" href="#">Online Stores</a></li>
-                        <li><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
-
+                <div class="col-md-4 mb-3 mb-md-0 ">
+                    <h6 class="text-uppercase ">Customer services</h6>
+                    <ul class="list-unstyled ">
+                        <li><a class="footer-link " href="# ">Help &amp; Contact Us</a></li>
+                        <li><a class="footer-link " href="# ">Returns &amp; Refunds</a></li>
+                        <li><a class="footer-link " href="# ">Online Stores</a></li>
+                        <li><a class="footer-link " href="# ">Terms &amp; Conditions</a></li>
                     </ul>
                 </div>
-                <div class="col-4 mb-3 float-left">
-                    <h6 class="text-uppercase">Company</h6>
-                    <ul class="list-unstyled">
-                        <li><a class="footer-link" href="#">What We Do</a></li>
-                        <li><a class="footer-link" href="#">Available Services</a></li>
-                        <li><a class="footer-link" href="#">Latest Posts</a></li>
-                        <li><a class="footer-link" href="#">FAQs</a></li>
-
+                <div class="col-md-4 mb-3 mb-md-0 ">
+                    <h6 class="text-uppercase ">Company</h6>
+                    <ul class="list-unstyled ">
+                        <li><a class="footer-link " href="# ">What We Do</a></li>
+                        <li><a class="footer-link " href="# ">Available Services</a></li>
+                        <li><a class="footer-link " href="# ">Latest Posts</a></li>
+                        <li><a class="footer-link " href="# ">FAQs</a></li>
                     </ul>
 
                 </div>
-                <div class="col-4 mb-3 float-right">
-                    <h6 class="text-uppercase">Social media</h6>
-                    <ul class="list-unstyled">
-                        <li><a class="footer-link" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                        <li><a class="footer-link" href="#"> Facebook</a></li>
-                        <li><a class="footer-link" href="#"> Instagram</a></li>
-                        <li><a class="footer-link" href="#"> Goodle</a></li>
-
-                    </ul>
+                <div class="col-md-4">
                 </div>
             </div>
-            <div class="border-top pt-4" style="border-color: #1d1d1d !important;">
+            <div class="border-top pt-4 " style="border-color: #1d1d1d !important; ">
                 <!--2 colums-->
-                <div class="row">
-                    <div class="col-6">
-                        <p class="small text-muted mb-0">&copy; 2020 All right reserved.</p>
+                <div class="row ">
+                    <div class="col-lg-6 ">
+                        <p class="small text-muted mb-0 ">&copy; 2020 All right reserved.</p>
                     </div>
-                    <div class="col-6 text-right">
-                        <p class="text-white reset-anchor">Template desined by <a href="#">Alexander</a></p>
+                    <div class="col-lg-6 text-right ">
+                        <p class="text-white reset-anchor ">Template desined by <a href="# ">Alexander</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
 
 </html>
