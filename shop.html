@@ -21,52 +21,51 @@
 
 <body>
     <!--Dinamick Hamburber Header-->
-    <header class="header container">
-        <div class="container px-3">
-            <nav class="navbar px-0">
-                <input class="trigger" type="checkbox" id="hamburgerButton">
-                <label for="hamburgerButton"><a class="navbar-brand" href="index.html"><span class="font-weight-bold text-golden text-uppercase">Git.hub Trade</span></a></label>
-
-                <div class="collapse">
-                    <a class="navbar-brand" href="index.html"><span class="font-weight-bold text-golden text-uppercase">Git.hub Trade</span></a>
-                    <!--1вый блок-->
-                    <ul class="navbar-nav mr-auto effect-brackets">
-                        <!--home-->
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <!--shop-->
-                        <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
-                        <!--Contacts-->
-                        <li class="nav-item"><a class="nav-link" href="navigation/contact.html">Contact</a></li>
-                        <!--DropdownMeny-->
-                        <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
-                        <div hidden>
-                            <a href="navigation/blog.html">Blog</a>
-                            <a href="navigation/about.html">About</a>
-                            <a href="navigation/Servises.html">Services</a>
-                            <a href="navigation/Help.html">Help</a>
-                            <a href="navigation/FAQ.html">FAQs</a>
-                        </div>
-
-                    </ul>
-                    <!--2рой блок-->
-                    <ul class="navbar-nav ml-auto effect-brackets">
-                        <!--Корзина-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="navigation/cart.html"><i class="fas fa-dolly-flatbed text-gray"></i>Cart<small class="text-gray">(0)</small></a>
+    <header class="bg-white">
+        <nav id="nav">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <span class="font-weight-bold text-uppercase text-dark logo">ШМОТКА</span>
+                </div>
+                <div class="links-container">
+                    <ul class="links effect-brackets">
+                        <li>
+                            <a href="#home" class="scroll-link">Home</a>
                         </li>
-                        <!--Лайк-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-heart"></i><small class="text-gray"> (0)</small></a>
+                        <li>
+                            <a href="shop.html" class="scroll-link">Shop</a>
                         </li>
-                        <!--Логин-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="navigation/login.html"><i class="fas fa-user-alt text-gray"></i>Login</a>
+                        <li>
+                            <a href="contact.html" class="scroll-link">Contact</a>
                         </li>
-
+                        <li>
+                            <a href="#pages" class="scroll-link">Pages</a>
+                            <div hidden>
+                                <a href="blog.html">Blog</a>
+                                <a href="about.html">About</a>
+                                <a href="services.html">Services</a>
+                                <a href="help.html">Help</a>
+                                <a href="faq.html">FAQs</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+                <ul class="navbar-tool effect-ease">
+                    <li>
+                        <a class="cart-toggle" href="#"> <i class="fas fa-dolly-flatbed text-gray"></i>(<small class="text-gray count-items">0</small>)</a>
+                    </li>
+                    <li>
+                        <a class="" href="#"> <i class="far fa-heart"></i><small class="text-gray"> (0)</small></a>
+                    </li>
+                    <li>
+                        <a class="" href="login.html"> <i class="fas fa-user-alt text-gray"></i></a>
+                    </li>
+                </ul>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
     </header>
 
     <div class="container">
