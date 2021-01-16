@@ -165,6 +165,7 @@ input[type="button"].btn-block {
     color: #fff;
     padding: 0 30px;
     cursor: pointer;
+    flex-basis: 25%;
     transition: all 0.2s;
 }
 
@@ -177,7 +178,7 @@ input[type="button"].btn-block {
     display: flex;
     z-index: 10;
     position: relative;
-    width: 500px;
+    width: 50%;
     box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
     justify-content: center;
     align-content: center;
@@ -195,5 +196,5 @@ input[type="button"].btn-block {
 }
 
 .flex-form input[type="email"] {
-    flex-basis: 500px;
+    flex-basis: 75%;
 }

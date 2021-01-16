@@ -1,82 +1,101 @@
-.category-item {
-    display: block;
-    color: #ff1212;
-    transition: all 0.3s;
-    position: relative;
+.position-relative {
+    position: relative !important;
 }
 
+.category-item {
+    display: block;
+    position: relative;
+    color: #343a40;
+    transition: all 0.3s;
+}
+  
 .category-item img {
     transition: all 0.3s;
 }
-
+  
 .category-item-title {
     display: inline-block;
     padding: 0.5rem 1rem;
+    background: #fff;
     text-transform: uppercase;
     letter-spacing: 0.07em;
     position: absolute;
-    border-radius: 50%;
     top: 50%;
     left: 50%;
-    font-size: 0.8rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.07);
     transform: translate(-50%, -50%);
-    background: pink;
-    opacity: 0.8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.07);
+    font-size: 0.8rem;
 }
-
+  
 .category-item:hover img {
     opacity: 0.7;
 }
-
-
-/*PRODUCT*/
-
-.position-relative {
-    position: relative;
-}
-
+/* сделать все изображения серыми на 40% */
 .product img {
-    transition: all 0.3s;
     filter: grayscale(40%);
+    transition: all 0.3s;
 }
-
+  
 .product-overlay {
     width: 100%;
     position: absolute;
-    left: 0em;
-    bottom: 0em;
+    left: 0;
+    bottom: 0;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding: 16px 0;
+    padding: 1rem 0;
     opacity: 0;
     transition: all 0.3s;
 }
-
+  
 .product-overlay ul li {
     transition: all 0.3s;
 }
-
+  
 .product-overlay ul li:first-of-type {
     transform: translateX(-10px);
-    transition: all 0.3s;
+    opacity: 0;
 }
-
+  
 .product-overlay ul li:last-of-type {
     transform: translateX(10px);
-    transition: all 0.3s;
+    opacity: 0;
 }
-
+  
 .product:hover img {
     opacity: 0.3;
 }
-
+  
 .product:hover .product-overlay {
     opacity: 1;
 }
-
+  
 .product:hover .product-overlay li {
     opacity: 1;
     transform: none;
+}
+  
+.product .badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+}
+
+.bg-cover {
+    background-size: cover !important;
+}
+  
+.bg-center {
+    background-position: center center !important;
+}
+  
+.reset-anchor {
+    color: inherit;
+    transition: all 0.3s;
+}
+  
+.reset-anchor:hover, .reset-anchor:focus {
+    text-decoration: none;
 }

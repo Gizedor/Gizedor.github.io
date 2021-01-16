@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 *,
 *::before,
 *::after {
@@ -8,16 +6,12 @@
 
 body {
     color: #111111;
-    background-color: #ede6b0;
+    background-color: #fff;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
-}
-
-.header {
-    background-color: #829079;
 }
 
 h1,
@@ -42,7 +36,7 @@ img {
 }
 
 a {
-    color: #b9925e;
+    color: #dcb14a;
     background-color: transparent;
     text-decoration: none;
 }
@@ -66,22 +60,6 @@ a:hover {
 
 .text-dark {
     color: #111111;
-}
-
-.text-olive {
-    color: #829079;
-}
-
-.text-cream {
-    color: #ede6b9;
-}
-
-.text-brown {
-    color: #b9925e;
-}
-
-.text-briez {
-    color: #36b5ff;
 }
 
 .text-uppercase {
@@ -196,10 +174,6 @@ a:hover {
     background-color: #343a40 !important;
 }
 
-.bg-deepG {
-    background-color: #1d3c45;
-}
-
 a.bg-dark:hover,
 a.bg-dark:focus,
 button.bg-dark:hover,
@@ -230,7 +204,7 @@ button.bg-light:focus {
 /* border */
 
 .border {
-    border: 2px solid #dee2e6 !important;
+    border: 1px solid #dee2e6 !important;
 }
 
 .border-top {
@@ -306,14 +280,16 @@ button.bg-light:focus {
 }
 
 .hero {
-    min-height: 25rem;
-    background-color: #ccc;
-    background-image: url("../images/bg1.jpg");
-    background-size: cover;
+    /* min-height: 25em; */
+    background-color: transparent;
+    /* background-image: url("../images/bg1.jpg"); */
+    /* background: transtarent; */
+    overflow: hidden;
+    /* background-size: cover; */
 }
 
 .hero p {
-    padding-top: 6rem;
+    padding-top: 6em;
     padding-bottom: 2em;
 }
 
@@ -331,6 +307,8 @@ button.bg-light:focus {
     background-attachment: fixed;
 }
 
+
+
 .reset-anchor {
     color: inherit;
 }
@@ -340,7 +318,9 @@ button.bg-light:focus {
     text-decoration: none;
 }
 
-
+.text-right{
+    text-align: right;
+}
 /* float */
 
 .float-left {
